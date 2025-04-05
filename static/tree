@@ -1,0 +1,1932 @@
+digraph {
+	node805408 [label=sql_script]
+	root -> node805408
+	node805856 [label=unit_statement]
+	node805408 -> node805856
+	node806192 [label=data_manipulation_language_statements]
+	node805856 -> node806192
+	node806304 [label=select_statement]
+	node806192 -> node806304
+	node806416 [label=select_only_statement]
+	node806304 -> node806416
+	node806528 [label=with_clause]
+	node806416 -> node806528
+	node090704 [label=with]
+	node806528 -> node090704
+	node807200 [label=with_factoring_clause]
+	node806528 -> node807200
+	node807648 [label=subquery_factoring_clause]
+	node807200 -> node807648
+	node807760 [label=query_name]
+	node807648 -> node807760
+	node807872 [label=identifier]
+	node807760 -> node807872
+	node807984 [label=id_expression]
+	node807872 -> node807984
+	node808096 [label=regular_id]
+	node807984 -> node808096
+	node049296 [label=danhsach]
+	node808096 -> node049296
+	node047888 [label=as]
+	node807648 -> node047888
+	node020752 [label="("]
+	node807648 -> node020752
+	node808432 [label=subquery]
+	node807648 -> node808432
+	node808544 [label=subquery_basic_elements]
+	node808432 -> node808544
+	node808656 [label=query_block]
+	node808544 -> node808656
+	node819792 [label=Select]
+	node808656 -> node819792
+	node808992 [label=selected_list]
+	node808656 -> node808992
+	node809104 [label=select_list_elements]
+	node808992 -> node809104
+	node809776 [label=expression]
+	node809104 -> node809776
+	node810112 [label=logical_expression]
+	node809776 -> node810112
+	node810224 [label=unary_logical_expression]
+	node810112 -> node810224
+	node810336 [label=multiset_expression]
+	node810224 -> node810336
+	node810448 [label=relational_expression]
+	node810336 -> node810448
+	node810560 [label=compound_expression]
+	node810448 -> node810560
+	node810672 [label=concatenation]
+	node810560 -> node810672
+	node810784 [label=model_expression]
+	node810672 -> node810784
+	node810896 [label=unary_expression]
+	node810784 -> node810896
+	node811568 [label=atom]
+	node810896 -> node811568
+	node812576 [label=general_element]
+	node811568 -> node812576
+	node811904 [label=general_element]
+	node812576 -> node811904
+	node812016 [label=general_element_part]
+	node811904 -> node812016
+	node812128 [label=id_expression]
+	node812016 -> node812128
+	node812240 [label=regular_id]
+	node812128 -> node812240
+	node316304 [label=e]
+	node812240 -> node316304
+	node858128 [label="."]
+	node812576 -> node858128
+	node813248 [label=general_element_part]
+	node812576 -> node813248
+	node812352 [label=id_expression]
+	node813248 -> node812352
+	node469280 [label=regular_id]
+	node812352 -> node469280
+	node850960 [label=nhanvien_th_id]
+	node469280 -> node850960
+	node801600 [label=column_alias]
+	node809104 -> node801600
+	node474096 [label=identifier]
+	node801600 -> node474096
+	node473872 [label=id_expression]
+	node474096 -> node473872
+	node473984 [label=regular_id]
+	node473872 -> node473984
+	node015504 [label=nhanvien_id]
+	node473984 -> node015504
+	node513744 [label=","]
+	node808992 -> node513744
+	node801824 [label=select_list_elements]
+	node808992 -> node801824
+	node473200 [label=expression]
+	node801824 -> node473200
+	node473424 [label=logical_expression]
+	node473200 -> node473424
+	node472752 [label=unary_logical_expression]
+	node473424 -> node472752
+	node472864 [label=multiset_expression]
+	node472752 -> node472864
+	node472528 [label=relational_expression]
+	node472864 -> node472528
+	node472640 [label=compound_expression]
+	node472528 -> node472640
+	node473760 [label=concatenation]
+	node472640 -> node473760
+	node474320 [label=model_expression]
+	node473760 -> node474320
+	node474432 [label=unary_expression]
+	node474320 -> node474432
+	node474656 [label=atom]
+	node474432 -> node474656
+	node474880 [label=constant]
+	node474656 -> node474880
+	node474992 [label=quoted_string]
+	node474880 -> node474992
+	node248016 [label="''"]
+	node474992 -> node248016
+	node475104 [label=column_alias]
+	node801824 -> node475104
+	node475552 [label=identifier]
+	node475104 -> node475552
+	node475664 [label=id_expression]
+	node475552 -> node475664
+	node475776 [label=regular_id]
+	node475664 -> node475776
+	node416592 [label=SL_BRTS_CSKH_THTB_TON_COE]
+	node475776 -> node416592
+	node520656 [label="''"]
+	node807648 -> node520656
+	node261200 [label=kpi_name]
+	node807648 -> node261200
+	node013008 [label=","]
+	node806528 -> node013008
+	node478688 [label=with_factoring_clause]
+	node806528 -> node478688
+	node478576 [label=subquery_factoring_clause]
+	node478688 -> node478576
+	node478912 [label=query_name]
+	node478576 -> node478912
+	node479024 [label=identifier]
+	node478912 -> node479024
+	node479136 [label=id_expression]
+	node479024 -> node479136
+	node479248 [label=regular_id]
+	node479136 -> node479248
+	node479472 [label=non_reserved_keywords_pre12c]
+	node479248 -> node479472
+	node013520 [label=count]
+	node479472 -> node013520
+	node479584 [label=paren_column_list]
+	node478576 -> node479584
+	node012496 [label="("]
+	node479584 -> node012496
+	node479696 [label=column_list]
+	node479584 -> node479696
+	node479808 [label=column_name]
+	node479696 -> node479808
+	node479920 [label=identifier]
+	node479808 -> node479920
+	node028304 [label=distinct]
+	node479920 -> node028304
+	node478128 [label=id_expression]
+	node479920 -> node478128
+	node477904 [label=regular_id]
+	node478128 -> node477904
+	node027792 [label=b]
+	node477904 -> node027792
+	node444368 [label="."]
+	node479808 -> node444368
+	node480592 [label=id_expression]
+	node479808 -> node480592
+	node480928 [label=regular_id]
+	node480592 -> node480928
+	node444496 [label=phieu_id]
+	node480928 -> node444496
+	node435152 [label=")"]
+	node479584 -> node435152
+	node446352 [label=dl_ngay]
+	node478576 -> node446352
+	node446480 [label=","]
+	node806528 -> node446480
+	node480368 [label=with_factoring_clause]
+	node806528 -> node480368
+	node480480 [label=subquery_factoring_clause]
+	node480368 -> node480480
+	node481936 [label=query_name]
+	node480480 -> node481936
+	node482048 [label=identifier]
+	node481936 -> node482048
+	node482160 [label=id_expression]
+	node482048 -> node482160
+	node482272 [label=regular_id]
+	node482160 -> node482272
+	node482384 [label=non_reserved_keywords_pre12c]
+	node482272 -> node482384
+	node438288 [label=count]
+	node482384 -> node438288
+	node482496 [label=paren_column_list]
+	node480480 -> node482496
+	node441424 [label="("]
+	node482496 -> node441424
+	node482608 [label=column_list]
+	node482496 -> node482608
+	node482720 [label=column_name]
+	node482608 -> node482720
+	node482832 [label=identifier]
+	node482720 -> node482832
+	node445264 [label=distinct]
+	node482832 -> node445264
+	node481712 [label=id_expression]
+	node482832 -> node481712
+	node481488 [label=regular_id]
+	node481712 -> node481488
+	node442448 [label=b]
+	node481488 -> node442448
+	node201936 [label="."]
+	node482720 -> node201936
+	node481600 [label=id_expression]
+	node482720 -> node481600
+	node477680 [label=regular_id]
+	node481600 -> node477680
+	node194640 [label=phieu_id]
+	node477680 -> node194640
+	node206032 [label=")"]
+	node482496 -> node206032
+	node203536 [label=dl_thang]
+	node480480 -> node203536
+	node198992 [label=","]
+	node806528 -> node198992
+	node483056 [label=with_factoring_clause]
+	node806528 -> node483056
+	node201104 [label=null]
+	node483056 -> node201104
+	node573392 [label=dl_nam]
+	node483056 -> node573392
+	node573648 [label=from]
+	node483056 -> node573648
+	node573328 [label=css]
+	node483056 -> node573328
+	node574416 [label="."]
+	node483056 -> node574416
+	node578448 [label=hd_thuebao]
+	node483056 -> node578448
+	node573776 [label=partition]
+	node483056 -> node573776
+	node483168 [label=subquery]
+	node806416 -> node483168
+	node481824 [label=subquery_basic_elements]
+	node483168 -> node481824
+	node483392 [label=for_update_clause]
+	node806304 -> node483392
+	node577104 [label=for]
+	node483392 -> node577104
+	node575632 [label="("]
+	node483392 -> node575632
+	node574288 [label="'||vphanvung_id||'"]
+	node483392 -> node574288
+	node574544 [label=")"]
+	node483392 -> node574544
+	node575696 [label=a]
+	node483392 -> node575696
+	node575824 [label=","]
+	node483392 -> node575824
+	node575952 [label=css]
+	node483392 -> node575952
+	node576016 [label="."]
+	node483392 -> node576016
+	node577488 [label=giaophieu]
+	node483392 -> node577488
+	node574992 [label=partition]
+	node483392 -> node574992
+	node483616 [label=for_update_clause]
+	node806304 -> node483616
+	node574096 [label=for]
+	node483616 -> node574096
+	node576400 [label="("]
+	node483616 -> node576400
+	node576336 [label="'||vphanvung_id||'"]
+	node483616 -> node576336
+	node576464 [label=")"]
+	node483616 -> node576464
+	node577040 [label=b]
+	node483616 -> node577040
+	node577744 [label=","]
+	node483616 -> node577744
+	node576720 [label=css]
+	node483616 -> node576720
+	node576848 [label="."]
+	node483616 -> node576848
+	node578000 [label=giaophieu_nv]
+	node483616 -> node578000
+	node576976 [label=partition]
+	node483616 -> node576976
+	node483840 [label=for_update_clause]
+	node806304 -> node483840
+	node576208 [label=for]
+	node483840 -> node576208
+	node577232 [label="("]
+	node483840 -> node577232
+	node577808 [label="'||vphanvung_id||'"]
+	node483840 -> node577808
+	node577936 [label=")"]
+	node483840 -> node577936
+	node577680 [label=e]
+	node483840 -> node577680
+	node577616 [label=","]
+	node483840 -> node577616
+	node578128 [label=admin]
+	node483840 -> node578128
+	node578576 [label="."]
+	node483840 -> node578576
+	node578384 [label=nhanvien_lnv]
+	node483840 -> node578384
+	node577424 [label=f]
+	node483840 -> node577424
+	node578256 [label=where]
+	node483840 -> node578256
+	node578512 [label=a]
+	node483840 -> node578512
+	node578192 [label="."]
+	node483840 -> node578192
+	node579088 [label=hdtb_id]
+	node483840 -> node579088
+	node578960 [label="="]
+	node483840 -> node578960
+	node578768 [label=b]
+	node483840 -> node578768
+	node578832 [label="."]
+	node483840 -> node578832
+	node578704 [label=hdtb_id]
+	node483840 -> node578704
+	node578896 [label=and]
+	node483840 -> node578896
+	node578640 [label=b]
+	node483840 -> node578640
+	node579728 [label="."]
+	node483840 -> node579728
+	node579024 [label=phieu_id]
+	node483840 -> node579024
+	node579536 [label="="]
+	node483840 -> node579536
+	node579152 [label=e]
+	node483840 -> node579152
+	node579792 [label="."]
+	node483840 -> node579792
+	node579984 [label=phieu_id]
+	node483840 -> node579984
+	node579664 [label=and]
+	node483840 -> node579664
+	node579408 [label=e]
+	node483840 -> node579408
+	node579600 [label="."]
+	node483840 -> node579600
+	node579856 [label=nhanvien_th_id]
+	node483840 -> node579856
+	node576912 [label="="]
+	node483840 -> node576912
+	node575568 [label=f]
+	node483840 -> node575568
+	node564560 [label="."]
+	node483840 -> node564560
+	node575504 [label=nhanvien_id]
+	node483840 -> node575504
+	node575056 [label=and]
+	node483840 -> node575056
+	node575248 [label=f]
+	node483840 -> node575248
+	node575312 [label="."]
+	node483840 -> node575312
+	node575184 [label=loainv_id]
+	node483840 -> node575184
+	node563856 [label="="]
+	node483840 -> node563856
+	node564112 [label=51]
+	node483840 -> node564112
+	node564304 [label=and]
+	node483840 -> node564304
+	node564368 [label=b]
+	node483840 -> node564368
+	node564240 [label="."]
+	node483840 -> node564240
+	node575376 [label=ttph_id]
+	node483840 -> node575376
+	node574864 [label="="]
+	node483840 -> node574864
+	node574800 [label=1]
+	node483840 -> node574800
+	node564624 [label=and]
+	node483840 -> node564624
+	node575120 [label=a]
+	node483840 -> node575120
+	node574928 [label="."]
+	node483840 -> node574928
+	node563920 [label=tthd_id]
+	node483840 -> node563920
+	node564432 [label=not]
+	node483840 -> node564432
+	node563792 [label=in]
+	node483840 -> node563792
+	node564176 [label="("]
+	node483840 -> node564176
+	node563984 [label=7]
+	node483840 -> node563984
+	node564048 [label=")"]
+	node483840 -> node564048
+	node564496 [label=and]
+	node483840 -> node564496
+	node564688 [label=b]
+	node483840 -> node564688
+	node564752 [label="."]
+	node483840 -> node564752
+	node564880 [label=huonggiao_id]
+	node483840 -> node564880
+	node564816 [label="="]
+	node483840 -> node564816
+	node564944 [label=3000]
+	node483840 -> node564944
+	node565008 [label=and]
+	node483840 -> node565008
+	node565072 [label=a]
+	node483840 -> node565072
+	node565136 [label="."]
+	node483840 -> node565136
+	node565200 [label=loaitb_id]
+	node483840 -> node565200
+	node565264 [label="="]
+	node483840 -> node565264
+	node565328 [label=58]
+	node483840 -> node565328
+	node565392 [label=AND]
+	node483840 -> node565392
+	node565456 [label=nvl]
+	node483840 -> node565456
+	node565520 [label="("]
+	node483840 -> node565520
+	node565584 [label=b]
+	node483840 -> node565584
+	node565648 [label="."]
+	node483840 -> node565648
+	node565712 [label=KQXL_ID]
+	node483840 -> node565712
+	node565776 [label=","]
+	node483840 -> node565776
+	node565840 [label=3]
+	node483840 -> node565840
+	node565904 [label=")"]
+	node483840 -> node565904
+	node565968 [label=<>]
+	node483840 -> node565968
+	node566032 [label=1]
+	node483840 -> node566032
+	node566096 [label=group]
+	node483840 -> node566096
+	node566160 [label=by]
+	node483840 -> node566160
+	node566224 [label=E]
+	node483840 -> node566224
+	node566288 [label="."]
+	node483840 -> node566288
+	node566352 [label=nhanvien_th_id]
+	node483840 -> node566352
+	node566416 [label=union]
+	node483840 -> node566416
+	node566480 [label=all]
+	node483840 -> node566480
+	node566544 [label=Select]
+	node483840 -> node566544
+	node566608 [label=e]
+	node483840 -> node566608
+	node566672 [label="."]
+	node483840 -> node566672
+	node566736 [label=nhanvien_th_id]
+	node483840 -> node566736
+	node566800 [label=nhanvien_id]
+	node483840 -> node566800
+	node566864 [label=","]
+	node483840 -> node566864
+	node566928 [label="''"]
+	node483840 -> node566928
+	node572240 [label=SL_BRTS_CSKH_THTB_HT_COE]
+	node483840 -> node572240
+	node577168 [label="''"]
+	node483840 -> node577168
+	node576784 [label=kpi_name]
+	node483840 -> node576784
+	node577552 [label=","]
+	node483840 -> node577552
+	node571792 [label=count]
+	node483840 -> node571792
+	node571600 [label="("]
+	node483840 -> node571600
+	node571536 [label=distinct]
+	node483840 -> node571536
+	node571408 [label=b]
+	node483840 -> node571408
+	node571472 [label="."]
+	node483840 -> node571472
+	node571344 [label=phieu_id]
+	node483840 -> node571344
+	node571280 [label=")"]
+	node483840 -> node571280
+	node411664 [label=dl_ngay]
+	node483840 -> node411664
+	node410768 [label=","]
+	node483840 -> node410768
+	node411408 [label=count]
+	node483840 -> node411408
+	node411280 [label="("]
+	node483840 -> node411280
+	node411536 [label=distinct]
+	node483840 -> node411536
+	node411024 [label=b]
+	node483840 -> node411024
+	node411216 [label="."]
+	node483840 -> node411216
+	node411728 [label=phieu_id]
+	node483840 -> node411728
+	node413584 [label=")"]
+	node483840 -> node413584
+	node413072 [label=dl_thang]
+	node483840 -> node413072
+	node412496 [label=","]
+	node483840 -> node412496
+	node413520 [label=null]
+	node483840 -> node413520
+	node411792 [label=dl_nam]
+	node483840 -> node411792
+	node414800 [label=from]
+	node483840 -> node414800
+	node415824 [label=css]
+	node483840 -> node415824
+	node413712 [label="."]
+	node483840 -> node413712
+	node413648 [label=hd_thuebao]
+	node483840 -> node413648
+	node416016 [label=partition]
+	node483840 -> node416016
+	node484064 [label=for_update_clause]
+	node806304 -> node484064
+	node416080 [label=for]
+	node484064 -> node416080
+	node415120 [label="("]
+	node484064 -> node415120
+	node416208 [label="'||vphanvung_id||'"]
+	node484064 -> node416208
+	node416144 [label=")"]
+	node484064 -> node416144
+	node415952 [label=a]
+	node484064 -> node415952
+	node415568 [label=","]
+	node484064 -> node415568
+	node415760 [label=css]
+	node484064 -> node415760
+	node415888 [label="."]
+	node484064 -> node415888
+	node414928 [label=giaophieu]
+	node484064 -> node414928
+	node415632 [label=partition]
+	node484064 -> node415632
+	node484288 [label=for_update_clause]
+	node806304 -> node484288
+	node414480 [label=for]
+	node484288 -> node414480
+	node415056 [label="("]
+	node484288 -> node415056
+	node415184 [label="'||vphanvung_id||'"]
+	node484288 -> node415184
+	node415248 [label=")"]
+	node484288 -> node415248
+	node414992 [label=b]
+	node484288 -> node414992
+	node414160 [label=","]
+	node484288 -> node414160
+	node413968 [label=css]
+	node484288 -> node413968
+	node412944 [label="."]
+	node484288 -> node412944
+	node413136 [label=giaophieu_nv]
+	node484288 -> node413136
+	node414288 [label=partition]
+	node484288 -> node414288
+	node484512 [label=for_update_clause]
+	node806304 -> node484512
+	node415312 [label=for]
+	node484512 -> node415312
+	node414032 [label="("]
+	node484512 -> node414032
+	node414672 [label="'||vphanvung_id||'"]
+	node484512 -> node414672
+	node414416 [label=")"]
+	node484512 -> node414416
+	node414224 [label=e]
+	node484512 -> node414224
+	node413392 [label=","]
+	node484512 -> node413392
+	node413904 [label=admin]
+	node484512 -> node413904
+	node412560 [label="."]
+	node484512 -> node412560
+	node412624 [label=nhanvien_lnv]
+	node484512 -> node412624
+	node413328 [label=f]
+	node484512 -> node413328
+	node412112 [label=where]
+	node484512 -> node412112
+	node412240 [label=a]
+	node484512 -> node412240
+	node412304 [label="."]
+	node484512 -> node412304
+	node412368 [label=hdtb_id]
+	node484512 -> node412368
+	node412688 [label="="]
+	node484512 -> node412688
+	node412048 [label=b]
+	node484512 -> node412048
+	node412752 [label="."]
+	node484512 -> node412752
+	node408272 [label=hdtb_id]
+	node484512 -> node408272
+	node413008 [label=and]
+	node484512 -> node413008
+	node412816 [label=b]
+	node484512 -> node412816
+	node408336 [label="."]
+	node484512 -> node408336
+	node412432 [label=phieu_id]
+	node484512 -> node412432
+	node411920 [label="="]
+	node484512 -> node411920
+	node411856 [label=e]
+	node484512 -> node411856
+	node407184 [label="."]
+	node484512 -> node407184
+	node412176 [label=phieu_id]
+	node484512 -> node412176
+	node411984 [label=and]
+	node484512 -> node411984
+	node407760 [label=e]
+	node484512 -> node407760
+	node407824 [label="."]
+	node484512 -> node407824
+	node408080 [label=nhanvien_th_id]
+	node484512 -> node408080
+	node408208 [label="="]
+	node484512 -> node408208
+	node407696 [label=f]
+	node484512 -> node407696
+	node407632 [label="."]
+	node484512 -> node407632
+	node407120 [label=nhanvien_id]
+	node484512 -> node407120
+	node407888 [label=and]
+	node484512 -> node407888
+	node407568 [label=f]
+	node484512 -> node407568
+	node407504 [label="."]
+	node484512 -> node407504
+	node404304 [label=loainv_id]
+	node484512 -> node404304
+	node407440 [label="="]
+	node484512 -> node407440
+	node407248 [label=51]
+	node484512 -> node407248
+	node406992 [label=and]
+	node484512 -> node406992
+	node407312 [label=b]
+	node484512 -> node407312
+	node406288 [label="."]
+	node484512 -> node406288
+	node406864 [label=ttph_id]
+	node484512 -> node406864
+	node406800 [label="="]
+	node484512 -> node406800
+	node406608 [label=4]
+	node484512 -> node406608
+	node406672 [label=and]
+	node484512 -> node406672
+	node406928 [label=a]
+	node484512 -> node406928
+	node407056 [label="."]
+	node484512 -> node407056
+	node406544 [label=tthd_id]
+	node484512 -> node406544
+	node406480 [label=not]
+	node484512 -> node406480
+	node406224 [label=in]
+	node484512 -> node406224
+	node406736 [label="("]
+	node484512 -> node406736
+	node406416 [label=7]
+	node484512 -> node406416
+	node406160 [label=")"]
+	node484512 -> node406160
+	node406032 [label=and]
+	node484512 -> node406032
+	node406352 [label=b]
+	node484512 -> node406352
+	node405328 [label="."]
+	node484512 -> node405328
+	node405840 [label=huonggiao_id]
+	node484512 -> node405840
+	node405904 [label="="]
+	node484512 -> node405904
+	node405648 [label=3000]
+	node484512 -> node405648
+	node405712 [label=and]
+	node484512 -> node405712
+	node405968 [label=a]
+	node484512 -> node405968
+	node406096 [label="."]
+	node484512 -> node406096
+	node405584 [label=loaitb_id]
+	node484512 -> node405584
+	node405520 [label="="]
+	node484512 -> node405520
+	node405264 [label=58]
+	node484512 -> node405264
+	node405776 [label=and]
+	node484512 -> node405776
+	node405456 [label=b]
+	node484512 -> node405456
+	node405200 [label="."]
+	node484512 -> node405200
+	node405072 [label=ngay_th]
+	node484512 -> node405072
+	node405392 [label=">"]
+	node484512 -> node405392
+	node403728 [label="="]
+	node484512 -> node403728
+	node404880 [label=to_date]
+	node484512 -> node404880
+	node404944 [label="("]
+	node484512 -> node404944
+	node404688 [label="'''||vdauthang||'"]
+	node484512 -> node404688
+	node404752 [label=00]
+	node484512 -> node404752
+	node405008 [label=":00"]
+	node484512 -> node405008
+	node405136 [label=":00"]
+	node484512 -> node405136
+	node404624 [label="''"]
+	node484512 -> node404624
+	node404560 [label=","]
+	node484512 -> node404560
+	node403920 [label="''"]
+	node484512 -> node403920
+	node404816 [label=YYYYMMDD]
+	node484512 -> node404816
+	node404112 [label=HH24]
+	node484512 -> node404112
+	node404496 [label=":MI"]
+	node484512 -> node404496
+	node403152 [label=":SS"]
+	node484512 -> node403152
+	node404176 [label="''"]
+	node484512 -> node404176
+	node404432 [label=")"]
+	node484512 -> node404432
+	node403984 [label=and]
+	node484512 -> node403984
+	node404240 [label=b]
+	node484512 -> node404240
+	node404368 [label="."]
+	node484512 -> node404368
+	node403856 [label=ngay_th]
+	node484512 -> node403856
+	node403792 [label="<"]
+	node484512 -> node403792
+	node402768 [label="="]
+	node484512 -> node402768
+	node404048 [label=to_date]
+	node484512 -> node404048
+	node401872 [label="("]
+	node484512 -> node401872
+	node403344 [label="'''||vngay||'"]
+	node484512 -> node403344
+	node403600 [label=23]
+	node484512 -> node403600
+	node403664 [label=":59"]
+	node484512 -> node403664
+	node403536 [label=":59"]
+	node484512 -> node403536
+	node403472 [label="''"]
+	node484512 -> node403472
+	node403408 [label=","]
+	node484512 -> node403408
+	node402192 [label="''"]
+	node484512 -> node402192
+	node403024 [label=YYYYMMDD]
+	node484512 -> node403024
+	node402960 [label=HH24]
+	node484512 -> node402960
+	node403280 [label=":MI"]
+	node484512 -> node403280
+	node403088 [label=":SS"]
+	node484512 -> node403088
+	node402832 [label="''"]
+	node484512 -> node402832
+	node403216 [label=")"]
+	node484512 -> node403216
+	node402704 [label=AND]
+	node484512 -> node402704
+	node402640 [label=nvl]
+	node484512 -> node402640
+	node402384 [label="("]
+	node484512 -> node402384
+	node402896 [label=b]
+	node484512 -> node402896
+	node401680 [label="."]
+	node484512 -> node401680
+	node402576 [label=KQXL_ID]
+	node484512 -> node402576
+	node402512 [label=","]
+	node484512 -> node402512
+	node402448 [label=3]
+	node484512 -> node402448
+	node402128 [label=")"]
+	node484512 -> node402128
+	node402256 [label=<>]
+	node484512 -> node402256
+	node402320 [label=1]
+	node484512 -> node402320
+	node402064 [label=group]
+	node484512 -> node402064
+	node401744 [label=by]
+	node484512 -> node401744
+	node400720 [label=E]
+	node484512 -> node400720
+	node400336 [label="."]
+	node484512 -> node400336
+	node401552 [label=nhanvien_th_id]
+	node484512 -> node401552
+	node401808 [label=union]
+	node484512 -> node401808
+	node400912 [label=all]
+	node484512 -> node400912
+	node402000 [label=Select]
+	node484512 -> node402000
+	node401936 [label=e]
+	node484512 -> node401936
+	node401488 [label="."]
+	node484512 -> node401488
+	node401424 [label=nhanvien_th_id]
+	node484512 -> node401424
+	node401616 [label=nhanvien_id]
+	node484512 -> node401616
+	node401360 [label=","]
+	node484512 -> node401360
+	node401168 [label="''"]
+	node484512 -> node401168
+	node401296 [label=SL_BRTS_CSKH_THTB_GIAO_COE]
+	node484512 -> node401296
+	node401104 [label="''"]
+	node484512 -> node401104
+	node401040 [label=kpi_name]
+	node484512 -> node401040
+	node401232 [label=","]
+	node484512 -> node401232
+	node400592 [label=count]
+	node484512 -> node400592
+	node400976 [label="("]
+	node484512 -> node400976
+	node400528 [label=distinct]
+	node484512 -> node400528
+	node400848 [label=b]
+	node484512 -> node400848
+	node400656 [label="."]
+	node484512 -> node400656
+	node400400 [label=phieu_id]
+	node484512 -> node400400
+	node400784 [label=")"]
+	node484512 -> node400784
+	node400272 [label=dl_ngay]
+	node484512 -> node400272
+	node400208 [label=","]
+	node484512 -> node400208
+	node400464 [label=count]
+	node484512 -> node400464
+	node400016 [label="("]
+	node484512 -> node400016
+	node410448 [label=distinct]
+	node484512 -> node410448
+	node399952 [label=b]
+	node484512 -> node399952
+	node410256 [label="."]
+	node484512 -> node410256
+	node410576 [label=phieu_id]
+	node484512 -> node410576
+	node411152 [label=")"]
+	node484512 -> node411152
+	node410704 [label=dl_thang]
+	node484512 -> node410704
+	node410000 [label=","]
+	node484512 -> node410000
+	node410960 [label=null]
+	node484512 -> node410960
+	node410832 [label=dl_nam]
+	node484512 -> node410832
+	node410896 [label=from]
+	node484512 -> node410896
+	node411088 [label=css]
+	node484512 -> node411088
+	node409808 [label="."]
+	node484512 -> node409808
+	node411344 [label=hd_thuebao]
+	node484512 -> node411344
+	node409744 [label=partition]
+	node484512 -> node409744
+	node484736 [label=for_update_clause]
+	node806304 -> node484736
+	node414096 [label=for]
+	node484736 -> node414096
+	node409232 [label="("]
+	node484736 -> node409232
+	node409296 [label="'||vphanvung_id||'"]
+	node484736 -> node409296
+	node409680 [label=")"]
+	node484736 -> node409680
+	node409104 [label=a]
+	node484736 -> node409104
+	node410192 [label=","]
+	node484736 -> node410192
+	node410384 [label=css]
+	node484736 -> node410384
+	node409040 [label="."]
+	node484736 -> node409040
+	node408976 [label=giaophieu]
+	node484736 -> node408976
+	node409168 [label=partition]
+	node484736 -> node409168
+	node484960 [label=for_update_clause]
+	node806304 -> node484960
+	node579920 [label=for]
+	node484960 -> node579920
+	node410064 [label="("]
+	node484960 -> node410064
+	node410128 [label="'||vphanvung_id||'"]
+	node484960 -> node410128
+	node408912 [label=")"]
+	node484960 -> node408912
+	node408784 [label=b]
+	node484960 -> node408784
+	node413456 [label=","]
+	node484960 -> node413456
+	node412880 [label=css]
+	node484960 -> node412880
+	node400144 [label="."]
+	node484960 -> node400144
+	node400080 [label=giaophieu_nv]
+	node484960 -> node400080
+	node408592 [label=partition]
+	node484960 -> node408592
+	node137232 [label=for_update_clause]
+	node806304 -> node137232
+	node411472 [label=for]
+	node137232 -> node411472
+	node408016 [label="("]
+	node137232 -> node408016
+	node851856 [label="'||vphanvung_id||'"]
+	node137232 -> node851856
+	node856528 [label=")"]
+	node137232 -> node856528
+	node848784 [label=e]
+	node137232 -> node848784
+	node850704 [label=","]
+	node137232 -> node850704
+	node854160 [label=admin]
+	node137232 -> node854160
+	node856336 [label="."]
+	node137232 -> node856336
+	node856656 [label=nhanvien_lnv]
+	node137232 -> node856656
+	node861968 [label=f]
+	node137232 -> node861968
+	node852624 [label=where]
+	node137232 -> node852624
+	node848080 [label=a]
+	node137232 -> node848080
+	node852368 [label="."]
+	node137232 -> node852368
+	node849936 [label=hdtb_id]
+	node137232 -> node849936
+	node853008 [label="="]
+	node137232 -> node853008
+	node860048 [label=b]
+	node137232 -> node860048
+	node853456 [label="."]
+	node137232 -> node853456
+	node856592 [label=hdtb_id]
+	node137232 -> node856592
+	node860368 [label=and]
+	node137232 -> node860368
+	node852688 [label=b]
+	node137232 -> node852688
+	node857744 [label="."]
+	node137232 -> node857744
+	node857872 [label=phieu_id]
+	node137232 -> node857872
+	node861264 [label="="]
+	node137232 -> node861264
+	node850128 [label=e]
+	node137232 -> node850128
+	node858448 [label="."]
+	node137232 -> node858448
+	node855504 [label=phieu_id]
+	node137232 -> node855504
+	node852944 [label=and]
+	node137232 -> node852944
+	node854608 [label=e]
+	node137232 -> node854608
+	node853136 [label="."]
+	node137232 -> node853136
+	node851984 [label=nhanvien_th_id]
+	node137232 -> node851984
+	node856912 [label="="]
+	node137232 -> node856912
+	node860752 [label=f]
+	node137232 -> node860752
+	node855696 [label="."]
+	node137232 -> node855696
+	node860688 [label=nhanvien_id]
+	node137232 -> node860688
+	node850768 [label=and]
+	node137232 -> node850768
+	node851536 [label=f]
+	node137232 -> node851536
+	node859920 [label="."]
+	node137232 -> node859920
+	node862352 [label=loainv_id]
+	node137232 -> node862352
+	node855184 [label="="]
+	node137232 -> node855184
+	node859408 [label=51]
+	node137232 -> node859408
+	node858192 [label=and]
+	node137232 -> node858192
+	node857488 [label=a]
+	node137232 -> node857488
+	node859088 [label="."]
+	node137232 -> node859088
+	node859856 [label=tthd_id]
+	node137232 -> node859856
+	node852752 [label=not]
+	node137232 -> node852752
+	node859472 [label=in]
+	node137232 -> node859472
+	node854480 [label="("]
+	node137232 -> node854480
+	node861584 [label=7]
+	node137232 -> node861584
+	node846608 [label=")"]
+	node137232 -> node846608
+	node847312 [label=and]
+	node137232 -> node847312
+	node850832 [label=b]
+	node137232 -> node850832
+	node852240 [label="."]
+	node137232 -> node852240
+	node854416 [label=huonggiao_id]
+	node137232 -> node854416
+	node862224 [label="="]
+	node137232 -> node862224
+	node857680 [label=3000]
+	node137232 -> node857680
+	node853200 [label=and]
+	node137232 -> node853200
+	node853072 [label=a]
+	node137232 -> node853072
+	node854544 [label="."]
+	node137232 -> node854544
+	node860112 [label=loaitb_id]
+	node137232 -> node860112
+	node858256 [label="="]
+	node137232 -> node858256
+	node858768 [label=58]
+	node137232 -> node858768
+	node858128 [label=and]
+	node137232 -> node858128
+	node854096 [label=e]
+	node137232 -> node854096
+	node860944 [label="."]
+	node137232 -> node860944
+	node853840 [label=ngaygiao]
+	node137232 -> node853840
+	node084176 [label=">"]
+	node137232 -> node084176
+	node085008 [label="="]
+	node137232 -> node085008
+	node081488 [label=to_date]
+	node137232 -> node081488
+	node084432 [label="("]
+	node137232 -> node084432
+	node079888 [label="'''||vdauthang||'"]
+	node137232 -> node079888
+	node080592 [label=00]
+	node137232 -> node080592
+	node087248 [label=":00"]
+	node137232 -> node087248
+	node081296 [label=":00"]
+	node137232 -> node081296
+	node083344 [label="''"]
+	node137232 -> node083344
+	node091280 [label=","]
+	node137232 -> node091280
+	node085328 [label="''"]
+	node137232 -> node085328
+	node083152 [label=YYYYMMDD]
+	node137232 -> node083152
+	node082512 [label=HH24]
+	node137232 -> node082512
+	node080080 [label=":MI"]
+	node137232 -> node080080
+	node091536 [label=":SS"]
+	node137232 -> node091536
+	node082768 [label="''"]
+	node137232 -> node082768
+	node085712 [label=")"]
+	node137232 -> node085712
+	node080848 [label=and]
+	node137232 -> node080848
+	node079952 [label=e]
+	node137232 -> node079952
+	node083088 [label="."]
+	node137232 -> node083088
+	node086096 [label=ngaygiao]
+	node137232 -> node086096
+	node092304 [label="<"]
+	node137232 -> node092304
+	node080400 [label="="]
+	node137232 -> node080400
+	node088144 [label=to_date]
+	node137232 -> node088144
+	node086736 [label="("]
+	node137232 -> node086736
+	node083472 [label="'''||vngay||'"]
+	node137232 -> node083472
+	node092240 [label=23]
+	node137232 -> node092240
+	node082576 [label=":59"]
+	node137232 -> node082576
+	node086352 [label=":59"]
+	node137232 -> node086352
+	node085584 [label="''"]
+	node137232 -> node085584
+	node076752 [label=","]
+	node137232 -> node076752
+	node088016 [label="''"]
+	node137232 -> node088016
+	node085840 [label=YYYYMMDD]
+	node137232 -> node085840
+	node088400 [label=HH24]
+	node137232 -> node088400
+	node078352 [label=":MI"]
+	node137232 -> node078352
+	node082064 [label=":SS"]
+	node137232 -> node082064
+	node085968 [label="''"]
+	node137232 -> node085968
+	node086224 [label=")"]
+	node137232 -> node086224
+	node085776 [label=AND]
+	node137232 -> node085776
+	node084752 [label=nvl]
+	node137232 -> node084752
+	node089744 [label="("]
+	node137232 -> node089744
+	node088464 [label=b]
+	node137232 -> node088464
+	node092176 [label="."]
+	node137232 -> node092176
+	node079696 [label=KQXL_ID]
+	node137232 -> node079696
+	node088848 [label=","]
+	node137232 -> node088848
+	node084624 [label=3]
+	node137232 -> node084624
+	node091664 [label=")"]
+	node137232 -> node091664
+	node088976 [label=<>]
+	node137232 -> node088976
+	node080016 [label=1]
+	node137232 -> node080016
+	node081104 [label=group]
+	node137232 -> node081104
+	node085520 [label=by]
+	node137232 -> node085520
+	node080464 [label=E]
+	node137232 -> node080464
+	node091472 [label="."]
+	node137232 -> node091472
+	node083280 [label=nhanvien_th_id]
+	node137232 -> node083280
+	node081040 [label=")"]
+	node137232 -> node081040
+	node084880 [label=","]
+	node137232 -> node084880
+	node078288 [label=nhanvien_dv]
+	node137232 -> node078288
+	node090000 [label=as]
+	node137232 -> node090000
+	node085648 [label="("]
+	node137232 -> node085648
+	node086288 [label=select]
+	node137232 -> node086288
+	node086672 [label=nv]
+	node137232 -> node086672
+	node089040 [label="."]
+	node137232 -> node089040
+	node092048 [label=nhanvien_id]
+	node137232 -> node092048
+	node090768 [label=","]
+	node137232 -> node090768
+	node087632 [label=nv]
+	node137232 -> node087632
+	node091024 [label="."]
+	node137232 -> node091024
+	node089616 [label=ma_nv]
+	node137232 -> node089616
+	node077136 [label=","]
+	node137232 -> node077136
+	node088272 [label=nv]
+	node137232 -> node088272
+	node077776 [label="."]
+	node137232 -> node077776
+	node081616 [label=ten_nv]
+	node137232 -> node081616
+	node081168 [label=","]
+	node137232 -> node081168
+	node084816 [label=nv]
+	node137232 -> node084816
+	node083600 [label="."]
+	node137232 -> node083600
+	node086864 [label=loaidv_id_c2]
+	node137232 -> node086864
+	node087952 [label=","]
+	node137232 -> node087952
+	node091088 [label=nvl]
+	node137232 -> node091088
+	node082384 [label="("]
+	node137232 -> node082384
+	node083216 [label=dv_c2]
+	node137232 -> node083216
+	node091920 [label="."]
+	node137232 -> node091920
+	node084944 [label=donvi_id]
+	node137232 -> node084944
+	node091600 [label=","]
+	node137232 -> node091600
+	node082192 [label="-"]
+	node137232 -> node082192
+	node090384 [label=1]
+	node137232 -> node090384
+	node086544 [label=")"]
+	node137232 -> node086544
+	node088592 [label=donvi_id_c2]
+	node137232 -> node088592
+	node082448 [label=","]
+	node137232 -> node082448
+	node077584 [label=nvl]
+	node137232 -> node077584
+	node080912 [label="("]
+	node137232 -> node080912
+	node077648 [label=dv_c2]
+	node137232 -> node077648
+	node088208 [label="."]
+	node137232 -> node088208
+	node595408 [label=ma_dv]
+	node137232 -> node595408
+	node598800 [label=","]
+	node137232 -> node598800
+	node584208 [label="''"]
+	node137232 -> node584208
+	node597328 [label=KXD]
+	node137232 -> node597328
+	node584976 [label="''"]
+	node137232 -> node584976
+	node586256 [label=")"]
+	node137232 -> node586256
+	node584464 [label=ma_dv_c2]
+	node137232 -> node584464
+	node598352 [label=","]
+	node137232 -> node598352
+	node591440 [label=nvl]
+	node137232 -> node591440
+	node596944 [label="("]
+	node137232 -> node596944
+	node587856 [label=dv_c2]
+	node137232 -> node587856
+	node590160 [label="."]
+	node137232 -> node590160
+	node591888 [label=ten_dv]
+	node137232 -> node591888
+	node593168 [label=","]
+	node137232 -> node593168
+	node592464 [label="''"]
+	node137232 -> node592464
+	node592208 [label=Khong]
+	node137232 -> node592208
+	node599504 [label=xac]
+	node137232 -> node599504
+	node596496 [label=dinh]
+	node137232 -> node596496
+	node593232 [label="''"]
+	node137232 -> node593232
+	node589776 [label=")"]
+	node137232 -> node589776
+	node584592 [label=ten_dv_c2]
+	node137232 -> node584592
+	node587216 [label=","]
+	node137232 -> node587216
+	node592784 [label=nv]
+	node137232 -> node592784
+	node592080 [label="."]
+	node137232 -> node592080
+	node589648 [label=loaidv_id_c3]
+	node137232 -> node589648
+	node590800 [label=","]
+	node137232 -> node590800
+	node599376 [label=nvl]
+	node137232 -> node599376
+	node593680 [label="("]
+	node137232 -> node593680
+	node595152 [label=dv_c3]
+	node137232 -> node595152
+	node584848 [label="."]
+	node137232 -> node584848
+	node598032 [label=donvi_id]
+	node137232 -> node598032
+	node589584 [label=","]
+	node137232 -> node589584
+	node584144 [label="-"]
+	node137232 -> node584144
+	node599440 [label=1]
+	node137232 -> node599440
+	node598608 [label=")"]
+	node137232 -> node598608
+	node598224 [label=donvi_id_c3]
+	node137232 -> node598224
+	node588240 [label=","]
+	node137232 -> node588240
+	node587344 [label=nvl]
+	node137232 -> node587344
+	node595024 [label="("]
+	node137232 -> node595024
+	node591632 [label=dv_c3]
+	node137232 -> node591632
+	node586576 [label="."]
+	node137232 -> node586576
+	node584720 [label=ma_dv]
+	node137232 -> node584720
+	node587536 [label=","]
+	node137232 -> node587536
+	node589712 [label="''"]
+	node137232 -> node589712
+	node584272 [label=KXD]
+	node137232 -> node584272
+	node586704 [label="''"]
+	node137232 -> node586704
+	node586192 [label=")"]
+	node137232 -> node586192
+	node598928 [label=ma_dv_c3]
+	node137232 -> node598928
+	node583632 [label=","]
+	node137232 -> node583632
+	node599312 [label=nvl]
+	node137232 -> node599312
+	node598864 [label="("]
+	node137232 -> node598864
+	node599888 [label=dv_c3]
+	node137232 -> node599888
+	node596880 [label="."]
+	node137232 -> node596880
+	node591248 [label=ten_dv]
+	node137232 -> node591248
+	node594512 [label=","]
+	node137232 -> node594512
+	node583696 [label="''"]
+	node137232 -> node583696
+	node597712 [label=Khong]
+	node137232 -> node597712
+	node599760 [label=xac]
+	node137232 -> node599760
+	node598288 [label=dinh]
+	node137232 -> node598288
+	node594960 [label="''"]
+	node137232 -> node594960
+	node588048 [label=")"]
+	node137232 -> node588048
+	node584400 [label=ten_dv_c3]
+	node137232 -> node584400
+	node586832 [label=from]
+	node137232 -> node586832
+	node594704 [label=dulieu]
+	node137232 -> node594704
+	node597776 [label="."]
+	node137232 -> node597776
+	node586512 [label=temp_nhanvien_donvi_cap23]
+	node137232 -> node586512
+	node589392 [label=nv]
+	node137232 -> node589392
+	node594832 [label=","]
+	node137232 -> node594832
+	node592144 [label=admin]
+	node137232 -> node592144
+	node593744 [label="."]
+	node137232 -> node593744
+	node594576 [label=donvi]
+	node137232 -> node594576
+	node591312 [label=dv_c2]
+	node137232 -> node591312
+	node599568 [label=","]
+	node137232 -> node599568
+	node590992 [label=admin]
+	node137232 -> node590992
+	node591760 [label="."]
+	node137232 -> node591760
+	node597200 [label=donvi]
+	node137232 -> node597200
+	node587920 [label=dv_c3]
+	node137232 -> node587920
+	node586128 [label=where]
+	node137232 -> node586128
+	node593360 [label=nv]
+	node137232 -> node593360
+	node590864 [label="."]
+	node137232 -> node590864
+	node590096 [label=donvi_c2_id]
+	node137232 -> node590096
+	node585936 [label="="]
+	node137232 -> node585936
+	node589264 [label=dv_c2]
+	node137232 -> node589264
+	node597392 [label="."]
+	node137232 -> node597392
+	node587152 [label=donvi_id]
+	node137232 -> node587152
+	node589200 [label="("]
+	node137232 -> node589200
+	node597584 [label="+"]
+	node137232 -> node597584
+	node598672 [label=")"]
+	node137232 -> node598672
+	node587472 [label=and]
+	node137232 -> node587472
+	node584656 [label=nv]
+	node137232 -> node584656
+	node592528 [label="."]
+	node137232 -> node592528
+	node598992 [label=donvi_c3_id]
+	node137232 -> node598992
+	node589840 [label="="]
+	node137232 -> node589840
+	node003856 [label=dv_c3]
+	node137232 -> node003856
+	node004816 [label="."]
+	node137232 -> node004816
+	node008208 [label=donvi_id]
+	node137232 -> node008208
+	node006608 [label="("]
+	node137232 -> node006608
+	node999824 [label="+"]
+	node137232 -> node999824
+	node998800 [label=")"]
+	node137232 -> node998800
+	node003344 [label=and]
+	node137232 -> node003344
+	node997648 [label=dv_c2]
+	node137232 -> node997648
+	node996816 [label="."]
+	node137232 -> node996816
+	node000976 [label=phanvung_id]
+	node137232 -> node000976
+	node999440 [label="("]
+	node137232 -> node999440
+	node995280 [label="+"]
+	node137232 -> node995280
+	node007952 [label=")"]
+	node137232 -> node007952
+	node005520 [label="="]
+	node137232 -> node005520
+	node007440 [label="'||vphanvung_id||'"]
+	node137232 -> node007440
+	node003152 [label=and]
+	node137232 -> node003152
+	node004176 [label=dv_c3]
+	node137232 -> node004176
+	node002064 [label="."]
+	node137232 -> node002064
+	node995344 [label=phanvung_id]
+	node137232 -> node995344
+	node993424 [label="("]
+	node137232 -> node993424
+	node994960 [label="+"]
+	node137232 -> node994960
+	node998096 [label=")"]
+	node137232 -> node998096
+	node006224 [label="="]
+	node137232 -> node006224
+	node001872 [label="'||vphanvung_id||'"]
+	node137232 -> node001872
+	node002448 [label=")"]
+	node137232 -> node002448
+	node001552 [label=select]
+	node137232 -> node001552
+	node003024 [label="'||vphanvung_id||'"]
+	node137232 -> node003024
+	node005584 [label=","]
+	node137232 -> node005584
+	node993168 [label="'''||vmatinh||'''"]
+	node137232 -> node993168
+	node003536 [label=","]
+	node137232 -> node003536
+	node002960 [label=a]
+	node137232 -> node002960
+	node992400 [label="."]
+	node137232 -> node992400
+	node993296 [label=kpi_name]
+	node137232 -> node993296
+	node997968 [label=","]
+	node137232 -> node997968
+	node993360 [label="'||vthang_ht||'"]
+	node137232 -> node993360
+	node007696 [label=","]
+	node137232 -> node007696
+	node003728 [label=to_date]
+	node137232 -> node003728
+	node993872 [label="("]
+	node137232 -> node993872
+	node993104 [label="'''||vngay||'''"]
+	node137232 -> node993104
+	node996112 [label=","]
+	node137232 -> node996112
+	node993936 [label="''"]
+	node137232 -> node993936
+	node997712 [label=YYYYMMDD]
+	node137232 -> node997712
+	node000656 [label="''"]
+	node137232 -> node000656
+	node996176 [label=")"]
+	node137232 -> node996176
+	node997200 [label=","]
+	node137232 -> node997200
+	node993488 [label=sysdate]
+	node137232 -> node993488
+	node007376 [label=","]
+	node137232 -> node007376
+	node992336 [label=A]
+	node137232 -> node992336
+	node993040 [label="."]
+	node137232 -> node993040
+	node001488 [label=dl_ngay]
+	node137232 -> node001488
+	node992592 [label=","]
+	node137232 -> node992592
+	node999568 [label=A]
+	node137232 -> node999568
+	node993744 [label="."]
+	node137232 -> node993744
+	node998992 [label=dl_thang]
+	node137232 -> node998992
+	node001808 [label=","]
+	node137232 -> node001808
+	node996304 [label=A]
+	node137232 -> node996304
+	node997584 [label="."]
+	node137232 -> node997584
+	node994896 [label=dl_nam]
+	node137232 -> node994896
+	node001168 [label=","]
+	node137232 -> node001168
+	node997392 [label=a]
+	node137232 -> node997392
+	node004624 [label="."]
+	node137232 -> node004624
+	node001040 [label=nhanvien_id]
+	node137232 -> node001040
+	node007248 [label=","]
+	node137232 -> node007248
+	node004496 [label=a]
+	node137232 -> node004496
+	node993808 [label="."]
+	node137232 -> node993808
+	node998160 [label=ma_nv]
+	node137232 -> node998160
+	node998352 [label=","]
+	node137232 -> node998352
+	node999504 [label=a]
+	node137232 -> node999504
+	node001360 [label="."]
+	node137232 -> node001360
+	node992720 [label=ten_nv]
+	node137232 -> node992720
+	node002768 [label=","]
+	node137232 -> node002768
+	node000080 [label=a]
+	node137232 -> node000080
+	node008272 [label="."]
+	node137232 -> node008272
+	node005776 [label=loaidv_id_c2]
+	node137232 -> node005776
+	node992656 [label=","]
+	node137232 -> node992656
+	node997264 [label=a]
+	node137232 -> node997264
+	node995024 [label="."]
+	node137232 -> node995024
+	node000592 [label=donvi_id_c2]
+	node137232 -> node000592
+	node992272 [label=","]
+	node137232 -> node992272
+	node997328 [label=a]
+	node137232 -> node997328
+	node004304 [label="."]
+	node137232 -> node004304
+	node996624 [label=ma_dv_c2]
+	node137232 -> node996624
+	node001936 [label=","]
+	node137232 -> node001936
+	node996944 [label=a]
+	node137232 -> node996944
+	node002704 [label="."]
+	node137232 -> node002704
+	node004560 [label=ten_dv_c2]
+	node137232 -> node004560
+	node004688 [label=","]
+	node137232 -> node004688
+	node997520 [label=a]
+	node137232 -> node997520
+	node004240 [label="."]
+	node137232 -> node004240
+	node003088 [label=loaidv_id_c3]
+	node137232 -> node003088
+	node998032 [label=","]
+	node137232 -> node998032
+	node993232 [label=a]
+	node137232 -> node993232
+	node994576 [label="."]
+	node137232 -> node994576
+	node005264 [label=donvi_id_c3]
+	node137232 -> node005264
+	node995408 [label=","]
+	node137232 -> node995408
+	node001424 [label=a]
+	node137232 -> node001424
+	node998480 [label="."]
+	node137232 -> node998480
+	node004112 [label=ma_dv_c3]
+	node137232 -> node004112
+	node994448 [label=","]
+	node137232 -> node994448
+	node002256 [label=a]
+	node137232 -> node002256
+	node003664 [label="."]
+	node137232 -> node003664
+	node005072 [label=ten_dv_c3]
+	node137232 -> node005072
+	node999952 [label=from]
+	node137232 -> node999952
+	node994832 [label="("]
+	node137232 -> node994832
+	node993680 [label=SELECT]
+	node137232 -> node993680
+	node999184 [label=A]
+	node137232 -> node999184
+	node003792 [label="."]
+	node137232 -> node003792
+	node004880 [label=nhanvien_id]
+	node137232 -> node004880
+	node004944 [label=","]
+	node137232 -> node004944
+	node000528 [label=a]
+	node137232 -> node000528
+	node995920 [label="."]
+	node137232 -> node995920
+	node008336 [label=kpi_name]
+	node137232 -> node008336
+	node994192 [label=","]
+	node137232 -> node994192
+	node000016 [label=nv]
+	node137232 -> node000016
+	node002320 [label="."]
+	node137232 -> node002320
+	node005008 [label=ma_nv]
+	node137232 -> node005008
+	node007312 [label=","]
+	node137232 -> node007312
+	node992464 [label=nv]
+	node137232 -> node992464
+	node001104 [label="."]
+	node137232 -> node001104
+	node005136 [label=ten_nv]
+	node137232 -> node005136
+	node007824 [label=","]
+	node137232 -> node007824
+	node999120 [label=nv]
+	node137232 -> node999120
+	node994512 [label="."]
+	node137232 -> node994512
+	node996880 [label=loaidv_id_c2]
+	node137232 -> node996880
+	node005648 [label=","]
+	node137232 -> node005648
+	node995216 [label=nvl]
+	node137232 -> node995216
+	node996240 [label="("]
+	node137232 -> node996240
+	node998736 [label=nv]
+	node137232 -> node998736
+	node994384 [label="."]
+	node137232 -> node994384
+	node999760 [label=donvi_id_c2]
+	node137232 -> node999760
+	node998928 [label=","]
+	node137232 -> node998928
+	node006480 [label="-"]
+	node137232 -> node006480
+	node000720 [label=1]
+	node137232 -> node000720
+	node995728 [label=")"]
+	node137232 -> node995728
+	node005328 [label=donvi_id_c2]
+	node137232 -> node005328
+	node751312 [label=","]
+	node137232 -> node751312
+	node748496 [label=nvl]
+	node137232 -> node748496
+	node761616 [label="("]
+	node137232 -> node761616
+	node751376 [label=nv]
+	node137232 -> node751376
+	node758480 [label="."]
+	node137232 -> node758480
+	node747856 [label=ma_dv_c2]
+	node137232 -> node747856
+	node761488 [label=","]
+	node137232 -> node761488
+	node762384 [label="''"]
+	node137232 -> node762384
+	node754256 [label=KXD]
+	node137232 -> node754256
+	node754320 [label="''"]
+	node137232 -> node754320
+	node750160 [label=")"]
+	node137232 -> node750160
+	node748304 [label=ma_dv_c2]
+	node137232 -> node748304
+	node751824 [label=","]
+	node137232 -> node751824
+	node749264 [label=nvl]
+	node137232 -> node749264
+	node760528 [label="("]
+	node137232 -> node760528
+	node760272 [label=nv]
+	node137232 -> node760272
+	node761552 [label="."]
+	node137232 -> node761552
+	node761872 [label=ten_dv_c2]
+	node137232 -> node761872
+	node747664 [label=","]
+	node137232 -> node747664
+	node755472 [label="''"]
+	node137232 -> node755472
+	node756752 [label=Khong]
+	node137232 -> node756752
+	node759120 [label=xac]
+	node137232 -> node759120
+	node758736 [label=dinh]
+	node137232 -> node758736
+	node760848 [label="''"]
+	node137232 -> node760848
+	node759760 [label=")"]
+	node137232 -> node759760
+	node758096 [label=ten_dv_c2]
+	node137232 -> node758096
+	node760592 [label=","]
+	node137232 -> node760592
+	node747984 [label=nv]
+	node137232 -> node747984
+	node760144 [label="."]
+	node137232 -> node760144
+	node756368 [label=loaidv_id_c3]
+	node137232 -> node756368
+	node759568 [label=","]
+	node137232 -> node759568
+	node763344 [label=nvl]
+	node137232 -> node763344
+	node748048 [label="("]
+	node137232 -> node748048
+	node754128 [label=nv]
+	node137232 -> node754128
+	node755984 [label="."]
+	node137232 -> node755984
+	node750416 [label=donvi_id_c3]
+	node137232 -> node750416
+	node756624 [label=","]
+	node137232 -> node756624
+	node754064 [label="-"]
+	node137232 -> node754064
+	node755792 [label=1]
+	node137232 -> node755792
+	node763408 [label=")"]
+	node137232 -> node763408
+	node758288 [label=donvi_id_c3]
+	node137232 -> node758288
+	node749648 [label=","]
+	node137232 -> node749648
+	node756496 [label=nvl]
+	node137232 -> node756496
+	node755280 [label="("]
+	node137232 -> node755280
+	node760208 [label=nv]
+	node137232 -> node760208
+	node759056 [label="."]
+	node137232 -> node759056
+	node747536 [label=ma_dv_c3]
+	node137232 -> node747536
+	node750096 [label=","]
+	node137232 -> node750096
+	node752208 [label="''"]
+	node137232 -> node752208
+	node750928 [label=KXD]
+	node137232 -> node750928
+	node748880 [label="''"]
+	node137232 -> node748880
+	node752016 [label=")"]
+	node137232 -> node752016
+	node758608 [label=ma_dv_c3]
+	node137232 -> node758608
+	node752848 [label=","]
+	node137232 -> node752848
+	node756304 [label=nvl]
+	node137232 -> node756304
+	node754640 [label="("]
+	node137232 -> node754640
+	node760016 [label=nv]
+	node137232 -> node760016
+	node753680 [label="."]
+	node137232 -> node753680
+	node752656 [label=ten_dv_c3]
+	node137232 -> node752656
+	node753616 [label=","]
+	node137232 -> node753616
+	node758032 [label="''"]
+	node137232 -> node758032
+	node749712 [label=Khong]
+	node137232 -> node749712
+	node759248 [label=xac]
+	node137232 -> node759248
+	node028880 [label=dinh]
+	node137232 -> node028880
+	node030288 [label="''"]
+	node137232 -> node030288
+	node028816 [label=")"]
+	node137232 -> node028816
+	node028112 [label=ten_dv_c3]
+	node137232 -> node028112
+	node028624 [label=","]
+	node137232 -> node028624
+	node028496 [label=a]
+	node137232 -> node028496
+	node029520 [label="."]
+	node137232 -> node029520
+	node028752 [label=dl_thang]
+	node137232 -> node028752
+	node028944 [label=","]
+	node137232 -> node028944
+	node029008 [label=a]
+	node137232 -> node029008
+	node029328 [label="."]
+	node137232 -> node029328
+	node029264 [label=dl_ngay]
+	node137232 -> node029264
+	node027920 [label=","]
+	node137232 -> node027920
+	node029072 [label=a]
+	node137232 -> node029072
+	node029392 [label="."]
+	node137232 -> node029392
+	node028048 [label=dl_nam]
+	node137232 -> node028048
+	node028240 [label=from]
+	node137232 -> node028240
+	node027984 [label=danhsach]
+	node137232 -> node027984
+	node029456 [label=a]
+	node137232 -> node029456
+	node028432 [label=","]
+	node137232 -> node028432
+	node027728 [label=nhanvien_dv]
+	node137232 -> node027728
+	node029712 [label=nv]
+	node137232 -> node029712
+	node029648 [label=where]
+	node137232 -> node029648
+	node028176 [label=a]
+	node137232 -> node028176
+	node034768 [label="."]
+	node137232 -> node034768
+	node029200 [label=nhanvien_id]
+	node137232 -> node029200
+	node396432 [label="="]
+	node137232 -> node396432
+	node401808 [label=nv]
+	node137232 -> node401808
+	node400464 [label="."]
+	node137232 -> node400464
+	node393680 [label=nhanvien_id]
+	node137232 -> node393680
+	node397392 [label="("]
+	node137232 -> node397392
+	node393296 [label="+"]
+	node137232 -> node393296
+	node397136 [label=")"]
+	node137232 -> node397136
+	node397072 [label=")"]
+	node137232 -> node397072
+	node392528 [label=A]
+	node137232 -> node392528
+	node392656 [label=<EOF>]
+	node805408 -> node392656
+}

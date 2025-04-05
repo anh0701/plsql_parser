@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>PL/SQL Parser</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+         #tree-container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ccc;
+            position: relative;
+            overflow: auto; 
+            white-space: nowrap; 
+        }
+
+        svg {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Nhập câu lệnh PL/SQL</h2>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 20px;">
+        <form method="post">
+            <textarea name="sql" rows="5" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Phân tích">
+        </form>
+    </div>
+
+    {% if results %}
+        <h3>Kết quả phân tích</h3>
+        <table border="1">
+            <tr>
+                <th>PURPOSE CODE</th>
+                <th>Source Data</th>
+                <th>Field Type</th>
+                <th>Field Alias</th>
+                <th>Table From</th>
+                <th>Table To</th>
+                <th>Field From</th>
+                <th>Field To</th>
+                <th>Field Formula</th>
+                <th>Destination View</th>
+            </tr>
+            {% for row in results %}
+            <tr>
+                <td>{{ row["PURPOSE CODE"] }}</td>
+                <td>{{ row["Source Data"] }}</td>
+                <td>{{ row["Field Type"] }}</td>
+                <td>{{ row.get("Field Alias", "") }}</td>
+                <td>{{ row["Table From"] }}</td>
+                <td>{{ row["Table To"] }}</td>
+                <td>{{ row.get("Field From", "") }}</td>
+                <td>{{ row.get("Field To", "") }}</td>
+                <td>{{ row["Field Formula"] }}</td>
+                <td>{{ row.get("Destination View", "") }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No data to display.</p>
+    {% endif %}
+
+    
+    <h2 style="text-align: center;">Cây Parse của PL/SQL</h2>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px;">
+        <button id="toggle-tree" >Hiển thị Cây Parse</button>
+    </div>
+
+    <div id="tree-container" style="display: none;">
+        <svg ></svg>
+    </div>
+    
+    <!-- {% if parse_tree_json %}
+        <h3>Cây cú pháp:</h3>
+        <pre>{{  parse_tree_json | tojson | safe }}</pre>
+    {% endif %} -->
+
+    <script>
+
+        document.getElementById("toggle-tree").addEventListener("click", function () {
+            const treeContainer = document.getElementById("tree-container");
+            if (treeContainer.style.display === "none") {
+                treeContainer.style.display = "block";
+                this.textContent = "Ẩn Cây Parse";
+            } else {
+                treeContainer.style.display = "none";
+                this.textContent = "Hiển thị Cây Parse";
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const parseTreeData = JSON.parse('{{ parse_tree_json | tojson | safe }}'); 
+            const container = document.getElementById("tree-container");
+        
+            const fullWidth = 3000, fullHeight = 2000;
+        
+            const svg = d3.select("svg")
+                .attr("width", fullWidth)
+                .attr("height", fullHeight)
+                .call(d3.zoom().scaleExtent([0.3, 3]).on("zoom", zoomed))
+                .append("g");
+        
+            const g = svg.append("g")
+                .attr("transform", `translate(${fullWidth / 4}, 50)`);
+        
+            const treeLayout = d3.tree().nodeSize([100, 50]); 
+            const root = d3.hierarchy(parseTreeData);
+            treeLayout(root);
+        
+            let minX = Infinity, maxX = -Infinity;
+            root.descendants().forEach(d => {
+                if (d.x < minX) minX = d.x;
+                if (d.x > maxX) maxX = d.x;
+            });
+
+            const treeWidth = maxX - minX + 200; 
+            const offsetX = (fullWidth - treeWidth) / 2 - minX;
+            g.attr("transform", `translate(${offsetX}, 50), scale(0.5)`);
+            
+            const link = g.selectAll(".link")
+                .data(root.links())
+                .enter()
+                .append("path")
+                .attr("class", "link")
+                .attr("fill", "none")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 2)
+                .attr("d", d3.linkVertical().x(d => d.x).y(d => d.y));
+        
+            const nodes = g.selectAll(".node")
+                .data(root.descendants())
+                .enter()
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x}, ${d.y})`);
+        
+            nodes.append("circle")
+                .attr("r", 8)
+                .attr("fill", "steelblue")
+                .attr("stroke", "#fff")
+                .attr("stroke-width", 2);
+        
+            nodes.append("text")
+                .attr("dy", 15)
+                .attr("text-anchor", "middle")
+                .style("font-size", "14px")
+                .style("fill", "#333")
+                .each(function(d) {
+                    wrapText(d3.select(this), d.data.name, 150);
+                });
+        
+            function zoomed(event) {
+                g.attr("transform", event.transform);
+            }
+        
+            function wrapText(textElement, text, maxWidth) {
+                const words = text.split(/\s+/);
+                let line = [];
+                let lineNumber = 0;
+                const lineHeight = 15;
+                const x = 0;
+                const y = 0;
+                const tspan = textElement.append("tspan").attr("x", x).attr("y", y).text("");
+        
+                words.forEach((word) => {
+                    line.push(word);
+                    tspan.text(line.join(" "));
+        
+                    if (tspan.node().getComputedTextLength() > maxWidth && line.length > 1) {
+                        line.pop();
+                        tspan.text(line.join(" "));
+                        line = [word];
+        
+                        textElement.append("tspan")
+                            .attr("x", x)
+                            .attr("y", y + ++lineNumber * lineHeight)
+                            .text(word);
+                    }
+                });
+            }
+        
+            container.scrollLeft = Math.max(0, offsetX - 100);
+            container.scrollTop = fullHeight / 4;
+        });
+    </script>
+</body>
+</html>
