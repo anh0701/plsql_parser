@@ -105,7 +105,7 @@ WHERE
 <!-- Thu gọn code trong vsc: Ctrl K 0 -->
 
 
-- PURPOSE CODE  
+<!-- - PURPOSE CODE  
 - Source Data  
 - Field Type  
 - Field Alias  
@@ -114,4 +114,4 @@ WHERE
 - Field From  
 - Field To  
 - Field Formula  
-- Destination View
+- Destination View -->
